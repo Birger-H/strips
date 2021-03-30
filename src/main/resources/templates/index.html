@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Strips</title>
+</head>
+<body>
+    <h1>Figuren</h1>
+    <ul>
+        <li th:each="figuur:${figuren}" th:text="${figuur.naam}"></li>
+    </ul>
+</body>
+</html>
